@@ -1,0 +1,51 @@
+{
+    "name": "vitamina-web/test",
+    "description": "Vitamina Web Test",
+    "authors": [
+        {
+            "name": "Michael Braga",
+            "email": "michaelbraga.dev@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wpackagist-plugin/advanced-custom-fields-pro",
+                "type": "wordpress-plugin",
+                "version": "6.0.7",
+                "dist": {
+                    "url": "https://connect.advancedcustomfields.com/index.php?v=6.0.7&p=pro&a=download&k=b3JkZXJfaWQ9NzgwNDN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTAzLTIzIDE3OjE2OjI2",
+                    "type": "zip"
+                }
+            }
+		}
+    ],
+    "require": {
+        "johnpbloch/wordpress": "6.1.1",
+        "stoutlogic/acf-builder": "^1.12"
+    },
+    "extra": {
+        "installer-paths": {
+            "plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wordpress-install-dir": "wordpress"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "roots/wordpress-core-installer": true,
+            "johnpbloch/wordpress-core-installer": true
+        }
+    }
+}

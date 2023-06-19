@@ -1,0 +1,36 @@
+.header {
+  .navbar {
+    background-color: #041b3a;
+  }
+
+  .main-menu {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-right: 30px;
+
+      a {
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        color: #ffff;
+      }
+    }
+  }
+
+  .nav-cta .btn {
+    background: #fff;
+    border-radius: 5px;
+    font-family: "Gill Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #5f5f5f;
+    padding: 10.5px 15px;
+  }
+}

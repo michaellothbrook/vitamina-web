@@ -1,0 +1,41 @@
+.section-latest-news {
+  background: #f4f4f4;
+
+  @include media-breakpoint-up(md) {
+    padding: 70px 0;
+  }
+
+  &__title {
+    font-family: "GillSans_Regular", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 57px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #041b3a;
+  }
+
+  &__subtitle {
+    font-family: "AndreaIIScriptUpright", Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    line-height: 25px;
+    color: #041b3a;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    background: 0;
+    border: 0;
+
+    &-title {
+      font-family: "GillSans_Regular", Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 25px;
+      text-align: center;
+      color: #262626;
+    }
+  }
+}

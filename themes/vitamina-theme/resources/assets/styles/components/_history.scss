@@ -1,0 +1,105 @@
+.section-history {
+  &__content {
+    h1 {
+      font-family: "GillSans_Regular", Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 57px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #041b3a;
+      margin-top: 50px;
+    }
+
+    h5 {
+      font-family: "AndreaIIScriptUpright", Arial, Helvetica, sans-serif;
+      font-size: 27px;
+      line-height: 25px;
+      color: #041b3a;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-family: "GillSans_Regular", Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #5f5f5f;
+    }
+  }
+
+  &__slide-years {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 8px;
+      width: calc(100% + 20px);
+      height: 2px;
+      background-color: #000;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+
+    &__year {
+      font-family: "AndreaIIScriptUpright", Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      line-height: 25px;
+      color: #5f5f5f;
+      position: relative;
+      z-index: 2;
+      background: #fff;
+      width: fit-content;
+      display: inline-block;
+      padding: 0 60px;
+    }
+
+    .card {
+      border: 0;
+      margin-top: 30px;
+
+      img {
+        width: auto;
+        height: 120px;
+        margin: 0 auto;
+      }
+
+      .card-title {
+        font-family: "AndreaIIScriptUpright", Arial, Helvetica, sans-serif;
+        font-size: 27px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #041b3a;
+      }
+
+      .card-text {
+        font-family: "GillSans_Regular", Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #5f5f5f;
+      }
+    }
+
+    &__final {
+      font-family: "AndreaIIScriptUpright", Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      line-height: 25px;
+      text-align: center;
+      color: #85680d;
+      margin-top: 70px;
+      width: 100%;
+    }
+  }
+}

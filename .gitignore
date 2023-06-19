@@ -1,0 +1,18 @@
+vendor
+plugins/*
+wordpress
+mysql
+.idea/
+
+.DS_Store
+composer.lock
+package-lock.json
+node_modules
+
+# Plugins
+!/plugins/my
+!/plugins/**/vendor
+!/plugins/vendor
+
+.cert/
+uploads/
